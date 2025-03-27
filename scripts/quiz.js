@@ -34,11 +34,13 @@ function comprobar() {
 
     rdRespuestas3 = document.querySelectorAll(".respuesta3")
     respuesta3OK = false
-    rdRespuestas3.forEach(element => {
+    for (element of rdRespuestas3) {
+    // rdRespuestas3.forEach(element => {
         if (element.value == "true") {
             respuesta3OK = true
         }
-    });
+    }
+// );
         
     
     if (respuesta3OK) {
