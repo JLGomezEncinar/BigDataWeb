@@ -50,7 +50,11 @@ function comprobar() {
     }
     document.getElementById("imgP3").style.visibility = "visible"
     if (respuesta1OK && respuesta2OK && respuesta3OK) {
-        document.getElementById("imgP4").src = "media/medalla.jpg"
-        document.getElementById("imgP4").style.visibility = "visible"
+        rdRespuesta4 = document.getElementById("exito")
+        imgP4 = document.createElement("img")
+        imgP4.src = "media/medalla.jpg"
+        imgP4.style.visibility = "visible"
+        rdRespuesta4.appendChild(imgP4);
+        
     }
 }
